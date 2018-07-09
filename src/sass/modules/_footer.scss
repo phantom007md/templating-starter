@@ -1,0 +1,150 @@
+.footer__detail{
+  background-image: url("../img/Footer.jpg");
+  background-size: cover;
+  padding: 40px 0;
+}
+
+.footer__box{
+  border-left: 1px solid $dark;
+  padding: 10px 30px;
+  color: #CCC;
+}
+
+.footer__menu{
+  width: 145px;
+  padding: 0px;
+}
+
+.footer__menu .menu li{
+  transition: all linear .2s;
+  border-bottom: 2px solid transparent;
+}
+
+.footer__menu .menu li:hover{
+  border-bottom: 2px solid transparent;
+}
+
+.footer__menu .menu li:hover a{
+  color: $orange;
+}
+
+.footer__menu .menu li a{
+  color: #EEE;
+  font-size:14px;
+  transition: all linear .1s;
+}
+
+.footer__currency{
+  width: 345px;
+  cursor: default;
+}
+
+.footer--currency span{
+  transition: all linear .1s;
+}
+
+.footer--currency:hover span{
+  color: $orange;
+}
+
+.footer--currency{
+  margin: 5px 0;
+}
+
+.footer__currency span{
+  padding: 5px;
+}
+
+.curr--label{
+  color: #d29213;
+}
+
+.footer__contact-us{
+  width: 345px;
+}
+
+.footer__contact-us>div{
+  margin: 10px 0;
+}
+
+.footer__contact-us i{
+  color:$orange;
+}
+
+.footer__contact--sns{
+  width: 100%;
+}
+
+.footer__contact--sns i{
+  padding: 5px 5px;
+  color: #CCC;
+}
+
+.footer__logos{
+  width: 345px;
+  border-left: none;
+}
+
+.footer__img--logo{
+  width: 70px;
+}
+
+.footer__img--logo img{
+  width: 100%;
+}
+
+.footer__main--logo .logo--title{
+  align-items: flex-start;
+}
+
+.footer__main--logo .logo--title__prime{
+  color: #FFF;
+}
+
+.footer__main--logo .logo--title__second{
+  color: #FFF;
+}
+
+.footer__bar{
+  height: 140px;
+}
+
+.footer__small--text{
+  font-size:14px;
+  color: $dark;
+}
+
+.footer__small--logos{
+  height: 100%;
+}
+
+.footer__small--logos i{
+  color:$secondary;
+  padding: 0px;
+  margin-top:10px;
+}
+
+.footer__img--sn{
+  margin: 0 10px;
+}
+
+.footer__logos--separator{
+  height: 60%;
+  border-right:1px solid $dark;
+  margin: 0 10px;
+}
+
+.footer__logo--text{
+  font-size: 14px;
+  color:$dark;
+  padding: 0 10px;
+}
+
+.saman{
+  display: inline-block;
+  margin-left: 50px;
+}
+
+.e-namad{
+  display: inline-block;
+}

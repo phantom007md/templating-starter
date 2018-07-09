@@ -1,0 +1,82 @@
+.flight-tabs{
+  position: relative;
+}
+
+.tabs{
+  position: absolute;
+  top: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 999;
+  right: 50%;
+  transform: translateX(
+    50%);
+}
+
+.flight--background{
+  height: 515px;
+  position: relative;
+  top: 0;
+  right: 0;
+}
+.background__blue-pattern{
+  right:0px;
+  bottom:0px;
+  height: 515px;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/Back.jpg");
+}
+
+.background__world{
+  bottom:0px;
+  height: 210px;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/World.png");
+}
+
+.passengers-age {
+  direction: rtl;
+
+  border-radius: 10px;
+  padding: 6px 12px;
+
+  background-color: white;
+}
+.passengers-age__help {
+  color: #555;
+  font-size: 12px;
+}
+.passengers-age:not(:last-child) {
+  margin-bottom: 10px;
+}
+.passengers-age__operators {
+  display: flex;
+}
+.passengers-age__input {
+  padding: 0 !important;
+  width: 40px !important;
+  text-align: center !important;
+}
+.passengers-age__operator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $orange;
+
+  .mdi {
+    color: white;
+  }
+}
+.flight-tabs-passengers {
+  width: 100%;
+  position: absolute;
+}
+.flight-class-label {
+  color: #0f204b;
+  font-size: 14px;
+  direction: rtl;
+}

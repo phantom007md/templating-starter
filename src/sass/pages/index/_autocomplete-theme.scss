@@ -1,0 +1,95 @@
+.flight-tabs {
+  .react-autosuggest {
+    &__container {
+      position: relative;
+    }
+    &__suggestion {
+      color: #838383;
+      direction: rtl;
+      font-size: 14px;
+
+      cursor: default;
+      padding: 5px 10px;
+      margin-bottom: 3px;
+      border-radius: 10px;
+
+      background-color: #e6f1fb;
+    }
+    &__suggestion:last-child {
+      margin-bottom: 0;
+    }
+    &__suggestion--highlighted {
+      background-color: white;
+    }
+  }
+
+  .autosuggest-container {
+    direction: ltr;
+    text-align: right;
+
+    width: 100%;
+    z-index: 999;
+    padding: 12px;
+    margin-top: 6px;
+    position: absolute;
+    border-radius: 10px;
+
+    background-color: #d5e8f8;
+  }
+
+  .autosuggest-airplane-icon {
+    font-size: 20px;
+
+    margin: 0;
+    margin-left: 12px;
+    display: inline-block;
+    transform: rotate(-90deg);
+  }
+
+  .suggestion-airport-description {
+    direction: ltr;
+    display: inline-block;
+  }
+  .suggestion-airport-code {
+    direction: ltr;
+    display: inline-block;
+  }
+
+  .autosuggest-container-head {
+    color: #0f204b;
+    font-size: 14px;
+
+    padding: 6px;
+    margin-top: 6px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    background-color: #bdd8f1;
+  }
+  .autosuggest-container--with-head {
+    margin-top: 0;
+    border-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .scrollbars-wrapper {
+    position: absolute;
+    width: 6px;
+    left: 2px;
+    bottom: 2px;
+    top: 2px;
+    border-radius: 3px;
+  }
+
+  .scrollbar-handler {
+    position: relative;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border-radius: inherit;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 66px;
+    transform: translateY(0px);
+  }
+}

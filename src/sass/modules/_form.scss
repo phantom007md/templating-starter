@@ -1,0 +1,133 @@
+.form-grupe{
+  position:relative;
+  padding: 0;
+}
+
+.form-grupe.padding--left{
+  padding-left: 20px;
+}
+
+.form-grupe input, .form-group__input{
+  flex: 1 0 auto;
+  padding: 10px 35px 10px 0px;
+  height: 40px;
+  border-radius: 10px;
+  border: 0;
+  width: 100%;
+  outline: none;
+  color: $dark;
+  font-family: 'iransans';
+}
+
+.form-grupe input::placeholder{
+  color: $gray;
+}
+
+.form-grupe .input--icon{
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0px;
+  padding: 6px 5px;
+  font-size: 22px;
+  color: $gray;
+}
+
+.ADMdtp-box {
+  margin-top: 5px;
+  max-height: 27.25em;
+}
+.ADMdtp-calendar-container.rtl {
+  font-family: 'iransans';
+}
+.ADMdtp-box .today:not(.valid) {
+  color: white;
+  background-color: #fc5f2a;
+}
+.ADMdtp ng-transclude, .ADMdtp .clickOutContainer {
+  position: static;
+}
+.ADMdtp-box:not(.rtl) {
+  direction: ltr;
+}
+
+.field {
+  display: flex;
+  position: relative;
+}
+.field.ltr .field__control {
+  padding: 6px;
+}
+.field.ltr.field--has-icon .field__control {
+  direction: ltr;
+
+  padding-right: 6px;
+  padding-left: 30px;
+}
+.field.ltr.field--has-icon .field__control:-moz-placeholder {
+  text-align: right;
+}
+.field.ltr.field--has-icon .field__control:-ms-input-placeholder {
+  text-align: right;
+}
+.field.ltr.field--has-icon .field__control::-webkit-input-placeholder {
+  text-align: right;
+}
+.field.ltr .field__icon {
+  right: auto;
+  left: 5px;
+}
+.field__control {
+  color: $textdark;
+  font-size: $medium;
+
+  flex-grow: 1;
+  min-width: 0;
+  padding: 6px;
+  border: 1px solid $gray;
+}
+.field__icon {
+  color: $textdark;
+  
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+}
+.field--has-icon .field__control {
+  padding-right: 30px;
+}
+.field__control--rounded {
+  border-radius: 8px;
+}
+.field__control:focus {
+  color: darken($textdark, 20%);
+
+  border-color: $orange;
+  transition: border-color 200ms ease;
+}
+.field__error {
+  color: $red;
+  font-size: $small;
+}
+.field__label {
+  white-space: nowrap;
+}
+.mb-5 {
+  margin-bottom: 5px;
+}
+.mb-15 {
+  margin-bottom: 15px;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.DateInput {
+  line-height: 16px;
+  border-radius: 10px;
+}
+
+.SingleDatePickerInput {
+  background-color: transparent;
+  border: none;
+}

@@ -1,0 +1,22 @@
+.table {
+	font-size: $medium;
+
+	th, td {
+		padding: 15px 10px;
+	}
+	td {
+		color: $textdark;
+	}
+	thead {
+		color: lighten($blue, 5%);
+		border-bottom: 1px solid lighten($blue, 10%);
+	}
+	tr:nth-child(2n) {
+		background-color: #fafafa;
+	}
+}
+.table.centered {
+	th, td {
+		text-align: center;
+	}
+}

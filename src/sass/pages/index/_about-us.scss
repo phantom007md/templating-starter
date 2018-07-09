@@ -1,0 +1,48 @@
+.panel--about--container{
+    padding-top: 40px;
+}
+
+.about__content{
+    text-align: right;
+    text-align:justify;
+    line-height: 30px;
+}
+
+.about--world-image img{
+    width: 100%;
+}
+
+.about__content{
+    color: $dark;
+    font-size: 14px;
+    position: relative;
+    padding-bottom: 90px;
+}
+
+span[class*="abt-icon"]{
+    border-radius: 50%;
+    border: 1px solid $dark;
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    justify-content: center;
+    align-items:center;
+    color: $orange;
+}
+
+span[class*="abt-icon"] .mdi{
+    font-size: 22px;
+}
+
+.about__content--tags{
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+}
+
+.about__content--tags span{
+    padding: 5px;
+    text-align: right;
+    font-size: 14px;
+}
+

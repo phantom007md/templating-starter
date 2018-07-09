@@ -1,0 +1,44 @@
+h1{
+  font-size:25px;
+  margin: 0;
+}
+
+h2{
+  font-size:18px;
+  margin: 0;
+}
+
+.join-us{
+  background-color: $orange;
+  height: 200px;
+}
+
+.join-us__wrapper{
+  height: 100%;
+  position: relative;
+  padding: 35px 0;
+  overflow: hidden;
+}
+
+.join-us--icon{
+  color:#FFF;
+  font-size: 45px;
+  position: absolute;
+  left: 150px;
+  top: 65%;
+  filter: opacity(20%);
+  transform: translateY(-50%) rotate(-20deg) scale(7, 7);
+}
+
+.join__title{
+  color: $blue;
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+.join__title--secondary{
+  color:#FFF;
+  padding: 5px 0;
+  font-style: normal;
+}
+

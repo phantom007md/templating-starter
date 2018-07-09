@@ -1,0 +1,26 @@
+.custom-message {
+	color: #222;
+	
+	padding: 10px;
+	border: 1px solid orange;
+	background-color: #ffcf76;
+}
+
+.message {
+	font-size: $big;
+
+	padding: 10px;
+	border-radius: 10px;
+}
+.message.message--success {
+	color: $green;
+	background-color: $light-blue;
+}
+.message.message--warning {
+	color: #222;
+	background-color: #ffcf76;
+}
+.message.message--error {
+	color: $white;
+	background-color: $light-red;
+}

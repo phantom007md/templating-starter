@@ -1,0 +1,75 @@
+$disabled_steps: #9C9C9C;
+
+.steps {
+	display: flex;
+	justify-content: space-around;
+}
+.step {
+	display: flex;
+	align-items: center;
+
+	& .step__icon {
+		margin: 0;
+		margin-top: 7px;
+	}
+	&.active .step__circle {
+		background-color: $primary-green;
+	}
+	&.active::before {
+		background-color: $primary-green;
+	}
+	&::before {
+		content: '';
+		height: 2px;
+		width: 100%;
+		display: block;
+		background-color: $disabled_steps;
+	}
+	&:first-child::before {
+		display: none;	
+	}
+	&:not(:first-child) {
+		flex-grow: 1;
+	}
+}
+.step__content {
+	min-width: 120px;
+
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.step__circle {
+	color: white;
+	font-size: 30px;
+
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background-color: $disabled_steps;
+}
+.step__label {
+	font-size: $medium;
+	
+	margin-top: 10px;
+	white-space: nowrap;
+}
+.step__title {
+	color: $orange;
+}
+.step__description {
+	color: $dark;
+	font-size: $medium;
+}
+.step__row-title {
+	color: $secondary;
+	font-size: $medium;
+}
+.small-text {
+  font-size: $small;
+}

@@ -1,0 +1,95 @@
+.top-bar{
+  height: 2px;
+  background: $orange;
+}
+
+.header__gray{
+  background: $gray;
+}
+
+.header-items{
+  height: 45px;
+}
+
+.header-items .flex{
+  height: 100%;
+}
+
+.info--mail{
+  color: $c1;
+  padding-left:50px;
+  cursor: default;
+}
+
+.info--phone{
+  cursor: default;
+  color: $c1;
+}
+
+.flag--select{
+  margin-left: 20px;
+  background: $gray;
+}
+
+.header--flags-sn{
+    color:$c1;
+}
+
+.header--menu{
+  flex-direction: column;
+}
+
+.logo__pic{
+  padding-bottom:25px;
+}
+
+.logo--title{
+  padding-right: 5px;
+  padding-bottom:25px;
+  justify-content: flex-end;
+}
+
+.logo--title__prime{
+  color: $blue;
+  font-size: 18px;
+}
+
+.logo--title__second{
+  color:$c1;
+  font-size: 12px;
+}
+
+.header--login{
+  padding-top:10px;
+}
+
+.header--login i{
+  margin: 1px;
+}
+
+.menu{
+  list-style: none;
+  display: flex;
+  margin-top:20px;
+}
+
+.menu li{
+  transition: all linear .2s;
+  border-bottom: 2px solid transparent;
+}
+
+.menu li:hover{
+  border-bottom: 2px solid $orange;
+}
+
+.menu li:hover a{
+  color: $orange;
+}
+
+.menu li a {
+  display: block;
+  font-size: $medium;
+  color: $textdark;
+  padding: 0px 10px 20px;
+}
+

@@ -1,0 +1,97 @@
+.tab{
+    width: 100%;
+}
+
+.tab__bottons{
+    width: 100%;
+}
+
+.tab__botton{
+    width: 15%;
+    height: 45px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background: rgba(108, 133, 167, .3);
+    color: #FFF;
+    transition: all linear .1s;
+    cursor: pointer;
+}
+
+.tab__button--active{
+    background: rgba(108, 133, 167, .7);
+    height: 50px;
+}
+
+.tab__panel{
+    width: 100%;
+    background: rgba(108, 133, 167, .7);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    padding: 20px;
+}
+
+.flight__mode{
+    padding: 5px 0;
+}
+
+.radio-group{
+    width: 100%;
+    flex-basis: 100%;
+}
+
+.radio-group *{
+    cursor: pointer;
+}
+
+.radio-group label{
+    padding: 2px 5px;
+    color: #FFF;
+    font-size: 14px;
+}
+
+.radio-group input[type="radio"]{
+    background: #FFF;
+    border: none;
+}
+
+.flight__inputs{
+    width: 83%;
+}
+
+.flight__to{
+    width: 48%;
+}
+
+.swap__icon{
+    width: 4%;
+    font-size: 24px;
+    color: #FFF;
+    margin:0;
+    cursor: pointer;
+}
+
+.flight__form{
+    width: 48%;
+}
+
+.airplaie__icon{
+    color: $orange !important;
+    transform: scale(-1, 1);
+}
+
+.flight__stats{
+    margin: 0 -15px;
+    margin-top: 20px;
+}
+
+.fight__status--input{
+    width: calc(100% / 3);
+    padding:0 15px;
+}
+
+
+.flight__submit{
+    width: 17%;
+    padding-right: 20px;
+}

@@ -1,0 +1,52 @@
+body, html {
+	display: flex;
+  width: 100%;
+	flex-grow: 1;
+	flex-direction: column;
+  direction: rtl;
+  font-family: iransans;
+  font-size: 100%;
+}
+
+.test{
+    min-height: 50px;
+    border: 1px solid red;
+}
+
+.np{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.fw{
+  width: 100%;
+}
+
+.align-middle {
+  vertical-align: middle;
+}
+.text-left {
+  text-align: left;
+}
+
+a {
+  color: $blue;
+}
+
+hr {
+  height: 1px;
+  border: none;
+  margin: 2em 0;
+  background-color: $gray;
+}
+
+.nm {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+// .container{
+//   width: 1195px !important;
+// }

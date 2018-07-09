@@ -1,0 +1,114 @@
+.aside
+{
+    width: 100%;
+    min-height: 00px;
+}
+
+.aside__panel
+{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px;
+
+    border: 1px solid $gray;
+    border-radius: 10px;
+}
+
+.panel--title
+{
+    width: 50%;
+    height: 35px;
+}
+.aside__panel__body
+{
+    width: 100%;
+    margin-top: 20px;
+
+    color: $dark;
+}
+
+.aside__support--pic
+{
+    width: 30%;
+
+    border-radius: 50%;
+}
+
+.aside__support--pic img
+{
+    width: 100%;
+}
+
+.support__body
+{
+    align-items: stretch;
+}
+
+.aside__support--text
+{
+    font-size: 14px !important;
+
+    width: 70%;
+
+    text-align: center;
+
+    color: $dark;
+}
+
+.support__title
+{
+    font-size: 14px;
+    font-weight: bold;
+
+    color: $blue;
+}
+
+.support__phone
+{
+    font-size: 16px;
+}
+
+.support__phone i
+{
+    color: $blue;
+}
+
+.sort__title
+{
+    width: 100%;
+}
+
+.sort__radio .radio-group
+{
+    width: auto;
+
+    flex-basis: auto;
+}
+
+.sort__radio
+{
+    width: 100%;
+}
+
+.sort__radio input
+{
+    margin-left: 5px;
+}
+
+.aside__btn
+{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.side__botton{
+    width: 100%;
+    color: $blue;
+    border: 1px solid $blue;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.time__item{
+  font-size: 18px;
+}
