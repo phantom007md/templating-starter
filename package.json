@@ -4,8 +4,9 @@
   "description": "this is the template for first pages of academy website we have",
   "main": "src/app.js",
   "scripts": {
-    "start": "webpack-dev-server",
-    "build": "webpack"
+    "start": "webpack --watch & webpack-dev-server",
+    "build": "webpack",
+    "prod": "webpack --env.production"
   },
   "keywords": [
     "template",
@@ -24,6 +25,7 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^1.0.0",
     "file-loader": "^1.1.11",
     "html-webpack-exclude-assets-plugin": "0.0.7",

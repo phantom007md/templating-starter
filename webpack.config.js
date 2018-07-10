@@ -1,30 +1,36 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const HtmlWebpackExcludeAssetsPlugin = require('html-webpack-exclude-assets-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+// const HtmlWebpackExcludeAssetsPlugin = require('html-webpack-exclude-assets-plugin');
 
 const public = path.resolve(__dirname, "public");
+const publicPath = path.resolve(__dirname, "public");
 const exclude_node_modules = path.resolve(__dirname, "node_modules");
+
+let inProduction = process.env.production;
+
 
 const newPug = (name) => {
     return new HtmlWebpackPlugin(
         {
-            filename: name+'.html',
-            template: 'src/pug/'+name+'.pug',
+            filename: name + '.html',
+            template: 'src/pug/' + name + '.pug',
             minify: false,
-            // excludeAssets: [/style.css/]
+            // excludeAssets: [/style.css/] // excluding chunks to be injected
         }
     )
 }
 
-module.exports =  {
+module.exports = {
     mode: "development",
     entry: {
         app: ["./src/app.js", "./src/sass/style.scss"],
     },
     output: {
         path: public,
-        filename: "assets/[name].js", 
+        filename: "assets/[name].js?[chunkhash]",
+        publicPath: publicPath
     },
     module: {
         rules: [
@@ -45,12 +51,49 @@ module.exports =  {
             },
             {
                 test: /\.pug/,
+                use: [
+                    {
+                        loader: "pug-loader",
+                        options: {
+                            pretty: true,
+                        }
+                    },
+                ]
+            },
+            {
+                test: /\.(png|jpe?g|gif)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: "assets/images/[name].[ext]?[hash]",
+                            publicPath: publicPath
+                        }
+                    },
+                    // Install the loader with the plugins needed before
+                    // uncommenting this.
+                    // {
+                    //     loader:'img-loader',
+                    //     options: {
+                    //         plugins: [
+                    //             require('imagemin-gifsicle')({}),
+                    //             require('imagemin-mozjpeg')({}),
+                    //             require('imagemin-optipng')({}),
+                    //             require('imagemin-svgo')({})
+                    //         ]
+                    //     }
+                    // },
+                ]
+            },
+            {
+                test: /\.(ttf|eot|woff|woff2)$/,
                 use: {
-                    loader:"pug-loader",
+                    loader: "file-loader",
                     options: {
-                        pretty: true
-                    }
-                }
+                        name: "assets/fonts/[name].[ext]",
+                        publicPath: publicPath
+                    },
+                },
             },
             {
                 test: /\.(sa|sc|c)ss$/,
@@ -58,7 +101,7 @@ module.exports =  {
                     {
                         loader: MiniCssExtractPlugin.loader,
                         options: {
-                            publicPath: public
+                            publicPath: publicPath
                         }
                     },
                     'css-loader',
@@ -69,7 +112,7 @@ module.exports =  {
                                 require('autoprefixer')
                             ]
                         }
-                    }, 
+                    },
                     'sass-loader',
                 ]
             }
@@ -80,14 +123,15 @@ module.exports =  {
         newPug('course'),
         // new HtmlWebpackExcludeAssetsPlugin(),
         new MiniCssExtractPlugin({
-            filename: './assets/style.css'
-        })
+            filename: 'assets/[name].css?[chunkhash]'
+        }),
+        // new CleanWebpackPlugin(['public']), // used in prod
     ],
     devServer: {
-        contentBase: public,
-        index: 'home.html',
-        watchContentBase: true,
         open: true,
-        publicPath: '/assets/'
+        index: 'home.html',
+        publicPath: publicPath,
+        contentBase: publicPath,
+        watchContentBase: true,
     },
 }

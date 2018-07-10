@@ -1,16 +1,21 @@
 // // ==============================================
+// // Libraries
+// // ==============================================
+@import "~bootstrap/scss/bootstrap";
+
+
+
+// // ==============================================
 // // Core
 // // ==============================================
 // @import "core/_variables";
-// @import "core/_conflict";
 // @import "core/_normalize";
+// @import "core/_typography";
+// @import "core/_base";
 // @import "core/_settings";
 // @import "core/_mixins";
-// @import "core/_media-queries";
 // @import "core/_grid";
-
-// @import "core/_base";
-// @import "core/_typography";
+// @import "core/_media-queries";
 
 
 
@@ -20,14 +25,6 @@
 // @import "fonts/_iran-sans";
 // @import "fonts/_material-icons";
 
-// // ==============================================
-// // React Dates
-// // ==============================================
-// // $react-dates-color-primary: $some-color-specific-to-my-project;
-// // $react-dates-color-secondary: $some-other-color-specific-to-my-project;
-// @import 'modules/_datepicker/variables.scss';
-// @import 'modules/_datepicker/styles.scss';
-
 
 
 // // ==============================================
@@ -36,44 +33,14 @@
 // @import "modules/_header";
 // @import "modules/_footer";
 // @import "modules/_button";
-// @import "pages/index/_flight-tabs";
-// @import "pages/index/_special-offers";
-// @import "pages/index/_blog";
-// @import "pages/index/_join-us";
-// @import "pages/index/_autocomplete-theme";
-// @import "modules/_form";
-// @import "pages/index/_about-us";
-// @import "modules/_tab";
-// @import "modules/_loading";
-// @import "modules/_drop-down";
-// @import "modules/_message";
-// @import "modules/_modal";
-// @import "modules/_checkbox";
-// @import "modules/_table";
-// @import "pages/foreign-resutls/_bread-crumb";
-// @import "pages/foreign-resutls/_matrix";
-// @import "pages/foreign-resutls/_change-search";
-// @import "pages/foreign-resutls/_results-main";
-// @import "pages/foreign-resutls/_results-aside";
-// @import "pages/foreign-resutls/_loader";
-// @import "pages/ticket-reserve/_reserve-time-box";
-// @import "pages/ticket-reserve/_reserve-step";
-// @import "pages/ticket";
 
 
 
 // // ==============================================
 // // Pages
 // // ==============================================
-// @import "pages/_index";
-// @import "pages/_foreign-results";
-// @import "pages/_ticket-reserve";
+// @import "pages/_home";
 
-h1{
-    color: red;
-    display: gird;
-    transition: all linear .2s;
-}
-::placeholder {
-  color: gray;
+body{
+  background: url("../assets/images/1.png");
 }
