@@ -1,0 +1,153 @@
+.course__info__panel {
+  border-radius: 5px;
+}
+
+.course__info__panel--divider {
+  border-top: 1px solid #DDDDDD;
+  margin: 20px 0;
+}
+
+.course__topics {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 80px;
+}
+
+.course__topics:last-child {
+  margin-bottom: 30px;
+}
+
+.course__topics--icon {
+  padding: 15px;
+  background-color: rgba(254, 91, 87, .2);
+  border-radius: 5px;
+}
+
+.course__topics__body {
+  padding-right: 15px;
+}
+
+.course__topics__title {
+  font-weight: bold;
+  font-size: 14px;
+  color: $primary;
+  margin-bottom: 3px;
+}
+
+.course__topics__content {
+  color: $darkGray;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.course__topics__wrapper {
+  border-bottom: 1px solid $primary;
+}
+
+.course__topics__steps {
+
+}
+
+.course__steps--toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: $secondary;
+}
+
+.course__steps--toggle * {
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.steps--count {
+  padding-right: 5px;
+  font-weight: bold;
+}
+
+.course__topic {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: all linear .2s;
+}
+
+.course__topic * {
+  cursor: pointer;
+  transition: all linear .2s;
+}
+
+.course__topic:hover * {
+  color: $primary ;
+}
+
+.course__topic:hover .course__topic--icon {
+  background-color: rgba(254, 91, 87, .3);
+}
+
+.course__topic:last-child {
+  //margin-bottom: 0px;
+}
+
+.course__topic--icon {
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, .05);
+}
+
+.course__topic--title {
+  padding-right: 20px;
+  color: $darkGray;
+}
+
+.course__topic--time {
+  display: flex;
+  align-items: center;
+  color: $darkGray;
+  padding-right: 30px;
+}
+
+// *********************This section belongs to teacher info . *****************************
+
+.teacher__profile {
+  color: $darkGray;
+}
+
+.teacher__profile__header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.teacher__title {
+  padding-left: 20px;
+}
+
+.teacher__name {
+  color: $secondary;
+  font-weight: 500;
+}
+
+.teacher__title > div {
+  text-align: left;
+}
+
+.teacher__avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+
+.teacher__avatar img {
+  width: 100%;
+  border-radius: 100%;
+  border: 2px solid $primary;
+}
+
+.teacher__profile__body {
+  margin-bottom: 20px;
+  font-size: 14px;
+}

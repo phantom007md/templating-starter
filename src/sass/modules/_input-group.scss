@@ -1,0 +1,55 @@
+.input__group--search {
+  position: relative;
+}
+
+.input__group--search > input {
+  padding-right: 40px
+}
+
+.input__icon {
+  color: #b0b5c2;
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+}
+
+.input__group--discount {
+  display: flex;
+}
+
+.input__group--discount > input {
+  height:35px;
+  color: $secondary;
+  font-size: 14px;
+  width: 100%;
+  outline: none;
+  padding-right: 20px;
+  border: 1px solid $gray;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.input__group__btn--discount button {
+  height:35px;
+  border: none;
+  outline: none;
+  color: $white;
+  cursor: pointer;
+  padding: 0px 20px;
+  background-color: $secondary;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+

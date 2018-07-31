@@ -1,46 +1,53 @@
 // // ==============================================
+// // Core
+// // ==============================================
+@import "core/_variables";
+@import "core/_typography";
+@import "core/_normalize";
+@import "core/_base";
+@import "core/_mixins";
+@import "core/_settings";
+@import "core/_grid";
+@import "core/_media-queries";
+
+
+
+// // ==============================================
 // // Libraries
 // // ==============================================
 @import "~bootstrap/scss/bootstrap";
-
-
-
-// // ==============================================
-// // Core
-// // ==============================================
-// @import "core/_variables";
-// @import "core/_normalize";
-// @import "core/_typography";
-// @import "core/_base";
-// @import "core/_settings";
-// @import "core/_mixins";
-// @import "core/_grid";
-// @import "core/_media-queries";
+@import "~flickity/css/flickity.css";
 
 
 
 // // ==============================================
 // // Fonts
 // // ==============================================
-// @import "fonts/_iran-sans";
-// @import "fonts/_material-icons";
+@import "fonts/_iran-sans";
+@import "fonts/_material-icons";
+@import "fonts/_roboto";
 
 
 
 // // ==============================================
 // // Modules
 // // ==============================================
-// @import "modules/_header";
-// @import "modules/_footer";
-// @import "modules/_button";
+@import "modules/_utils";
+@import "modules/_header";
+@import "modules/_footer";
+@import "modules/_checkbox";
+@import "modules/_radiobox";
+@import "modules/_input-group";
+@import "modules/_panel-white";
 
 
 
 // // ==============================================
 // // Pages
 // // ==============================================
-// @import "pages/_home";
+@import "pages/_home";
+@import "pages/_login";
 
-body{
-  background: url("../assets/images/1.png");
-}
+
+
+

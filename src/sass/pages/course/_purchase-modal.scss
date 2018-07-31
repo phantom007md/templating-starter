@@ -1,0 +1,54 @@
+.purchase-modal__close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 5px 10px !important;
+  outline:none !important;
+}
+
+.purchase-modal__close * {
+  outline:none !important;
+}
+
+.purchase-modal__title {
+  color: $secondary;
+  font-weight: bold;
+}
+
+.purchase-modal--row {
+  display: flex;
+  color: $darkGray;
+  padding: 20px 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.purchase-modal__price {
+  border-bottom: 1px solid $gray-200;
+}
+
+.purchase-modal__final-price {
+  color: $primary;
+  border-radius: 5px;
+  background: rgba(254, 91, 87, 0.2);;
+}
+
+.purchase-modal__banks {
+  margin-top: 30px;
+}
+
+.modal__banks--title {
+  color: $darkGray;
+  -ms-text-align-last: right;
+  text-align: center;
+  font-weight:normal;
+}
+
+.modal__banks--options {
+  display: flex;
+  justify-content: space-around;
+}
+
+.modal__banks--option {
+  background: inherit;
+}

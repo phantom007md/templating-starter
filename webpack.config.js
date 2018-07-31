@@ -120,7 +120,8 @@ module.exports = {
     },
     plugins: [
         newPug('home'),
-        newPug('course'),
+        newPug('login'),
+        newPug('recover'),
         // new HtmlWebpackExcludeAssetsPlugin(),
         new MiniCssExtractPlugin({
             filename: 'assets/[name].css?[chunkhash]'

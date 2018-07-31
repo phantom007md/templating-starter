@@ -1,0 +1,25 @@
+$theme-colors: (
+        "primary": #fe5b57,
+        "secondary": #505a78
+);
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1180px
+);
+$input-btn-focus-width: px;
+
+$tooltip-bg: darken($secondary, 15);
+
+$body-bg: $lightGray;
+
+$font-family-base: IRANSans, Roboto;
+
+$input-bg: $lightGray;
+$input-color: #636772;
+$input-btn-padding-y: .560rem;
+$input-btn-padding-x: 1.25rem;
+$input-border-color: transparent;
+$input-placeholder-color: #b0b4bf;

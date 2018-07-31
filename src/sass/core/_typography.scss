@@ -1,5 +1,39 @@
-$big              : 16px;
-$huge             : 18px;
-$small            : 12px;
-$medium           : 14px;
-$defaultTextColor : #c1c1c1;
+.text-16 {
+  font-size: 16px;
+}
+
+.text-24 {
+  font-size: 24px;
+}
+
+.text-32 {
+  font-size: 32px;
+}
+
+.text-64 {
+  font-size: 64px;
+}
+
+.text-lg {
+  font-size: $lg;
+}
+
+text-md {
+  font-size: $md;
+}
+
+.text-sm {
+  font-size: $sm;
+}
+
+.text-blue {
+  color: $textBlue;
+}
+
+.text-gray {
+  color: $gray;
+}
+
+.text-darkGray {
+  color: $darkGray;
+}

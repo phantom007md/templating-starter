@@ -1,52 +1,39 @@
-body, html {
-	display: flex;
-  width: 100%;
-	flex-grow: 1;
-	flex-direction: column;
+* {
   direction: rtl;
-  font-family: iransans;
-  font-size: 100%;
+  text-align: right;
 }
 
-.test{
-    min-height: 50px;
-    border: 1px solid red;
+html, body {
+  height: 100vh;
+  cursor: default;
 }
 
-.np{
-  padding-left: 0;
-  padding-right: 0;
+body {
+  display: flex;
+  flex-direction: column;
+  // background: url('../assets/images/base_background.png') repeat;
 }
 
-.fw{
-  width: 100%;
+.content__wrapper {
+  flex: 1 1 auto;
 }
 
-.align-middle {
-  vertical-align: middle;
-}
-.text-left {
-  text-align: left;
+// video player styles
+.vjs-default-skin {
+  color: #ffffff;
 }
 
-a {
-  color: $blue;
+.vjs-default-skin .vjs-play-progress,
+.vjs-default-skin .vjs-volume-level {
+  background-color: #ff3535
 }
 
-hr {
-  height: 1px;
-  border: none;
-  margin: 2em 0;
-  background-color: $gray;
+.vjs-default-skin .vjs-control-bar,
+.vjs-default-skin .vjs-big-play-button {
+  background: rgba(0, 0, 0, 0.7)
 }
 
-.nm {
-  margin-right: 0 !important;
-  margin-left: 0 !important;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
+.vjs-default-skin .vjs-slider {
+  background: rgba(0, 0, 0, 0.2333333333333333)
 }
 
-// .container{
-//   width: 1195px !important;
-// }

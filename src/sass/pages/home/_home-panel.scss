@@ -1,0 +1,21 @@
+.content--row {
+  padding-top: 10px;
+  margin-bottom: 40px;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-header {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.panel-header--right {
+  display: flex;
+  align-items: center;
+}

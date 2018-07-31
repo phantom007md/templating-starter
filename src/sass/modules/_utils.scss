@@ -1,0 +1,47 @@
+.bg-muted {
+  background-color: $bg-muted;
+}
+
+.ltr-dir {
+  direction: ltr !important;
+}
+
+.rtl-dir {
+  direction: rtl !important;
+}
+
+.border-radius-5 {
+  border-radius: 5px;
+}
+
+.border-radius-25 {
+  border-radius: 25px;
+}
+
+.mdi {
+  transition: all linear .1s;
+}
+
+.mdi--sub {
+  vertical-align: sub;
+}
+
+.mdi--center {
+  display: flex;
+  align-items: center;
+}
+
+.mdi--rotate {
+  transform: rotate(-90deg);
+  transform-origin: 50%;
+}
+
+.desc--height-sm {
+  height: 48px;
+  min-height: 48px;
+}
+
+.desc--height-lg {
+  height: 89px;
+  min-height: 89px;
+}

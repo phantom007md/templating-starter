@@ -1,14 +1,25 @@
-$c1           : #c1c1c1;
-$red			    : red;
-$blue         : #0f204b;
-$dark         : #8b8b8b;
-$gray         : #e7e8ed;
-$white        : #FFF;
-$orange       : #fcaf17;
-$green        : #499C6E;
-$primary      : #fcaf17;
-$secondary    : #0f204b;
-$textdark     : #838383;
-$light-blue   : #E1F7EA;
-$light-red    : #ff7676;
-$primary-green: #2DCC70;
+$white: #FFF;
+$lightGray: #f7f8f9;
+$gray: #b5b8c3;
+$darkGray: #6c6b70;
+$textBlue: #505a78;
+
+$primary: #fe5b57;
+$secondary: #505a78;
+$bg-php: #3a5ea5;
+$bg-sql: #f1763d;
+$bg-andi: #4bb769;
+$bg-py: #f690ae;
+$bg-js: #fdde35;
+$bg-muted: rgba(0, 0, 0, 0.9);
+
+$xl: 18px;
+$lg: 16px;
+$md: 14px;
+$sm: 12px;
+
+
+$home-carousel-sel-count: 5.3;
+
+// This file contains any changes on !Default props made in bootstrap sass files.
+@import "_bootstrap-override";

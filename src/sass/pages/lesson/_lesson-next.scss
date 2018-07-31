@@ -1,0 +1,77 @@
+.video__next__header.lesson__next__header {
+  padding: 10px 0 10px 10px;
+  margin-right: -10px;
+  cursor: pointer;
+}
+
+
+.video__next__body.lesson__next__body {
+  padding-right: 30px;
+  overflow: auto;
+  position: relative;
+  border-right: 1px solid $gray;
+  //height: calc(#{$video-xl-height} - 60px);
+}
+
+.next-step {
+  color: $gray;
+}
+
+.next-step__header {
+  color: $gray-200;
+  display: flex;
+  padding-top: 20px;
+  margin-right: -12px;
+  //margin-bottom: 10px;
+}
+
+.next-step__header {
+  cursor: pointer;
+}
+
+.next-step__header * {
+  cursor: pointer;
+}
+
+.next-step__title {
+  padding-right: 10px;
+}
+
+.next-step__body {
+  padding-right: 10px;
+  border-right: 1px solid $gray;
+}
+
+.next-step__item {
+  color: $gray-400;
+  display: flex;
+  font-size: 14px;
+  cursor: pointer;
+  padding:10px 7px;
+  align-items: center;
+  transition: all linear .1s;
+  justify-content: space-between;
+}
+
+.next-step__item * {
+  cursor: pointer;
+}
+.next-step__item:hover {
+  border-radius: 5px;
+  color: $white;
+  background: rgba(0,0,0, 0.1);
+}
+
+.next-step--right {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.next-step--left{
+  text-align: left;
+}
+
+.next-step--middle * {
+  cursor: pointer;
+}
