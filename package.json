@@ -1,10 +1,12 @@
 {
-  "name": "template-academy",
+  "name": "templating-starter",
   "version": "1.0.0",
-  "description": "this is the template for first pages of academy website we have",
+  "description": "a starter kit to speed templating with pug and sass",
   "main": "src/app.js",
   "scripts": {
-    "start": "webpack --watch & webpack-dev-server",
+   "start": "webpack-dev-server & webpack --watch ",
+    "dev": "webpack-dev-server",
+    "watch": "webpack --watch",
     "build": "webpack",
     "prod": "webpack --env.production"
   },
