@@ -5,7 +5,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 // const HtmlWebpackExcludeAssetsPlugin = require('html-webpack-exclude-assets-plugin');
 
 const public = path.resolve(__dirname, "public");
-const publicPath = path.resolve(__dirname, "public");
+const publicPath = "/public";
 const exclude_node_modules = path.resolve(__dirname, "node_modules");
 
 let inProduction = process.env.production;
