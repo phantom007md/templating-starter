@@ -130,9 +130,9 @@ module.exports = {
     ],
     devServer: {
         open: true,
-        index: 'home.html',
+        // index: 'home.html',
         publicPath: publicPath,
-        contentBase: publicPath,
+        contentBase: public,
         watchContentBase: true,
     },
 }
